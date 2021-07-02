@@ -10,7 +10,7 @@ var longitud;
 const btnAccept = document.getElementById('btnAccept');
 /**Un evento para cuando le de click */
 btnAccept.addEventListener('click', (evt) => {
-/** */
+/** Previene las cosas o acciones raras que ya vienen en el click */
     evt.preventDefault();
     /**Recuperamos el objeto del numero de tarjeta */
     cardNumber = document.getElementById('cardNumber').value ;

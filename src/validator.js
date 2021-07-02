@@ -31,6 +31,8 @@ function isValid(){
       if((i+1)%2 === 0){
           array[i] = array[i]*2;
           console.log(array[i]);
+      }else{
+        continue;
       }
   }
   /**Simplemente para mostrar que los numeros se hallas invertido */
@@ -39,11 +41,41 @@ function isValid(){
       prueba2 += array[j];
   }
   console.log(prueba2);
-  /**Suma de los numeros --------------------------------------------------------------------------mayores a 9*/ 
-  /*******************************-------------------------------------------------------------aqui te quedaste*/
-  var suma;
+  /**Suma de los numeros mayores a 9*/ 
+  for(let i=0 ; i<longitud; i++){
+    var arrayTemporal = [2];
+    let mayorNueve= '';
+    if((i+1)%2 === 0){
+      if(array[i] > 9){
+        console.log('mayor a 9'); /** REGRESAAA -------------------------------------------------------------- */
+        /*mayorNueve = array[i];*/
+        
+        console.log(mayorNueve);
+        for(let x=0; x < 2 ; x++){
+          /*console.log(digits1[x]);
+          /*arrayTemporal[x] = mayorNueve.slice(x-1,x);
+          console.log(arrayTemporal[x]);
+        }*/
+        /*arrayTemporal[0]= mayorNueve.slice(0,1);
+        console.log('Slice1 '+ 1+ ' Numero' + arrayTemporal[0]);
+        arrayTemporal[1]= mayorNueve.slice(1,2);
+        console.log('Slice1 '+ 1+ ' Numero' + arrayTemporal[1]);*/
+      }
+    }else{
+      continue;
+    }
+  }
+  }
+  /* Suma de todos los elementos del array, pasandolos a numero*/
+  var suma=0;
   for(let i=0; i< longitud; i++){
-    suma = suma + array[i];
+    suma = suma + parseInt(array[i]);
+  }
+  /**Modulo de 10 para verificar si la tarjeta es valida o no */
+  if( suma%10 === 0){
+    console.log('Tarjeta valida FELICIDADES'); /**MODIFICAR A QUE ALTERE EL CONTENIDO DE UN PARRAFO  */
+  }else{
+    console.log('NO es valida, LO SIENTO');
   }
   console.log(suma);
 }
