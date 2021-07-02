@@ -9,7 +9,8 @@ var longitud;
 /**RECUPERAMOS EL BOTON COMO OBJETO */
 const btnAccept = document.getElementById('btnAccept');
 /**Un evento para cuando le de click */
-btnAccept.addEventListener('click', (evt) => {
+/**A la funcion de flecha no hay necesidad de poner funcion antes */
+btnAccept.addEventListener('click', (evt) => { 
 /** Previene las cosas o acciones raras que ya vienen en el click */
     evt.preventDefault();
     /**Recuperamos el objeto del numero de tarjeta */

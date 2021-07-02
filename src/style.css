@@ -1,12 +1,30 @@
+header{
+    background-color: #80CED7;
+    padding: 0px;
+    margin: 0%;
+}
 main{
-    padding: 3px 40px; /*el 3px lo voy a tener que modificar*/
+    padding: 0px 40px; /*el 3px lo voy a tener que modificar*/
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 main .datos{
-    width: 30%;
-    /*border: solid 1px black;*/
+   /* width: 30%;
+    border: solid 1px black;*/
+    background-color: aqua;
 }
 main .visualizar{
-    width: 45%;
+    /*width: 45%;
+    left: -20px;*/
     border: solid 1px black;
-    left: -20px;
+    
+}
+main .visualizar form{
+    align-items: center;
+}
+main .datos{
+    align-items: center;
+}
+footer{
+    background-color: #F1F7ED;
 }

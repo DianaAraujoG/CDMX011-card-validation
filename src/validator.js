@@ -42,20 +42,21 @@ function isValid(){
   }
   console.log(prueba2);
   /**Suma de los numeros mayores a 9*/ 
+  var arrayTemporal = [2];
+  var mayorNueve= '';
   for(let i=0 ; i<longitud; i++){
-    var arrayTemporal = [2];
-    let mayorNueve= '';
+    
     if((i+1)%2 === 0){
       if(array[i] > 9){
         console.log('mayor a 9'); /** REGRESAAA -------------------------------------------------------------- */
-        /*mayorNueve = array[i];*/
-        
+       /* mayorNueve = array[i];
+        arrayTemporal = mayorNueve.split("(?<=.)");
         console.log(mayorNueve);
         for(let x=0; x < 2 ; x++){
-          /*console.log(digits1[x]);
-          /*arrayTemporal[x] = mayorNueve.slice(x-1,x);
+          console.log(digits1[x]);
+          arrayTemporal[x] = mayorNueve.slice(x-1,x);
           console.log(arrayTemporal[x]);
-        }*/
+        }
         /*arrayTemporal[0]= mayorNueve.slice(0,1);
         console.log('Slice1 '+ 1+ ' Numero' + arrayTemporal[0]);
         arrayTemporal[1]= mayorNueve.slice(1,2);
@@ -65,7 +66,7 @@ function isValid(){
       continue;
     }
   }
-  }
+  
   /* Suma de todos los elementos del array, pasandolos a numero*/
   var suma=0;
   for(let i=0; i< longitud; i++){
