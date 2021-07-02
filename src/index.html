@@ -7,10 +7,33 @@
   </head>
   <body>
     <header>
-      <h1>HOLA MUNDO</h1>
+      <h3>Verifica tu tarjeta</h3>
+      <hr>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="datos">
+        <p id="ingresar">Ingrese su numero de tarjeta</p>
+        <form >
+          <p>
+            <input type="text" id="cardNumber">
+          </p>
+          <button id="btnAccept">Aceptar</button>
+          <br/>
+        </form>
+      </div>
+      <div class="visualizar">
+        <div class="card">
+          <p></p><!--Probicional para mostrar la dimension-->
+        </div>
+        <div>
+          <p>Tarjeta valida </p><!--probicional-->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <hr>
+    </footer>
     <script src="index.js" type="module"></script>
+    <script src="validator.js" type="module"></script>
   </body>
 </html>

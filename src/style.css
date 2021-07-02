@@ -1,0 +1,12 @@
+main{
+    padding: 3px 40px; /*el 3px lo voy a tener que modificar*/
+}
+main .datos{
+    width: 30%;
+    /*border: solid 1px black;*/
+}
+main .visualizar{
+    width: 45%;
+    border: solid 1px black;
+    left: -20px;
+}
