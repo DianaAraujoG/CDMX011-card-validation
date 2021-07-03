@@ -19,6 +19,8 @@ btnAccept.addEventListener('click', (evt) => {
     /*mostrar(cardNumber.value);*/ /**Prueba de llamado de funcion */
     longitud = cardNumber.length;
     console.log('Tamaño: '+ longitud);
+
+    document.getElementById('mostrarNumero').innerHTML = cardNumber;
     
     /**Validacion para que no entre vacio falta ver para que no ingrese letras */
     if( cardNumber === '' || cardNumber.length === 0 ){
