@@ -1,5 +1,5 @@
 import validator from './validator.js'; /**Para que funcion ??? */
-import {mostrar, isValid} from './validator.js'; /** ./ busca desde la raiz */
+import {mostrar, isValid,  maskify} from './validator.js'; /** ./ busca desde la raiz */
 
 console.log(validator);
 
@@ -19,8 +19,6 @@ btnAccept.addEventListener('click', (evt) => {
     /*mostrar(cardNumber.value);*/ /**Prueba de llamado de funcion */
     longitud = cardNumber.length;
     console.log('Tamaño: '+ longitud);
-
-    document.getElementById('mostrarNumero').innerHTML = cardNumber;
     
     /**Validacion para que no entre vacio falta ver para que no ingrese letras */
     if( cardNumber === '' || cardNumber.length === 0 ){
@@ -30,6 +28,10 @@ btnAccept.addEventListener('click', (evt) => {
         console.log('FUNCIONES :)');
         mostrar();
         isValid();
+        /*En la siguiente linia se muestra el codificado del numero de la tarjeta cambiando
+        el contenido de un parrado con la ayuda de document by id */
+        document.getElementById('mostrarNumero').innerHTML = maskify (cardNumber);
+        
     }
 
 });
