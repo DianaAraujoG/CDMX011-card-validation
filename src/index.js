@@ -25,9 +25,8 @@ btnAccept.addEventListener('click', (evt) => {
         alert('Ingrese el numero de tarjeta')
     }else{
         /**Aqui se va hacer el llamado de las funciones */
-        console.log('FUNCIONES :)');
         mostrar();
-        isValid();
+        document.getElementById('mostrarValida').innerHTML = isValid();
         /*En la siguiente linia se muestra el codificado del numero de la tarjeta cambiando
         el contenido de un parrado con la ayuda de document by id */
         document.getElementById('mostrarNumero').innerHTML = maskify (cardNumber);

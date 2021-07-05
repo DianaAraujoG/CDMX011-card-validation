@@ -13,6 +13,9 @@
     </header>
     <main>
       <div class="datos">
+        <pre>  Te acaba de llegar una tarjeta de tu banco y no
+      sabes si es valida o no, ingresa el numero 
+        de tu tarjeta y asegurate de que lo sea .</pre>
         <p id="ingresar">Ingrese su numero de tarjeta</p>
         <form >
           <p>
@@ -24,15 +27,21 @@
       </div>
       <div class="visualizar">
         <div class="card">
-          <p id="mostrarNumero">nuemro de tarjeta justo aqui :)</p><!--Probicional para mostrar la dimension-->
+          <div class="logotipo">
+            <img src="img/circulos.png" alt="logo" id="logo">
+          </div>
+          
+          <img src="img/chip.png" alt="chip" id="chip">
+          <p id="mostrarNumero">numero de tarjeta justo aqui :)</p><!--Probicional para mostrar la dimension-->
         </div>
         <div class="mensaje">
-          <p>Tarjeta valida </p><!--probicional-->
+          <p id="mostrarValida">Tarjeta valida </p><!--probicional-->
         </div>
       </div>
     </main>
     <footer>
       <hr>
+      <p>Esta pagina no guarda ningun dato.</p>
     </footer>
     <script src="index.js" type="module"></script>
     <script src="validator.js" type="module"></script>

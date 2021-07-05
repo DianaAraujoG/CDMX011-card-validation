@@ -52,6 +52,8 @@ function isValid(){
         console.log('mayor a 9'); /** REGRESAAA -------------------------------------------------------------- */
         mayorNueve = array[i];
         console.log(mayorNueve);
+        array[i]= parseInt(array[i]) - 9;
+        console.log(array[i]);
        /* arrayTemporal = mayorNueve.split("(?<=.)");
         console.log(mayorNueve);
         for(let x=0; x < 2 ; x++){
@@ -76,9 +78,9 @@ function isValid(){
   }
   /**Modulo de 10 para verificar si la tarjeta es valida o no */
   if( suma%10 === 0){
-    console.log('Tarjeta valida FELICIDADES'); /**MODIFICAR A QUE ALTERE EL CONTENIDO DE UN PARRAFO  */
+    return('Tarjeta valida FELICIDADES'); /**MODIFICAR A QUE ALTERE EL CONTENIDO DE UN PARRAFO  */
   }else{
-    console.log('NO es valida, LO SIENTO');
+    return('NO es valida, LO SIENTO');
   }
   console.log(suma);
 }
@@ -93,18 +95,18 @@ function maskify (cardNumber){
   }else{
     //
     var array2 =[longitud];
-    for(let j=0; j<longitud; j++){
+    for(let j=0; j<=longitud; j++){
       array2[j]=cardNumber.slice(j-1,j);
-      console.log(array2[j]);
+      //console.log(array2[j]);
     }
-    let menosCuatro = longitud - 4 ;
+    let menosCuatro = longitud - 3 ;
     for(let i=0; i< menosCuatro ; i++){
        array2[i]='#';
-       console.log(array2[i]);
+       ///console.log(array2[i]);
     }
-    for(let i=0; i<longitud; i++){
+    for(let i=0; i<=longitud; i++){
       codificado += array2[i];
-      console.log(codificado);
+      //console.log(codificado);
     }
   }
   return(codificado);

@@ -1,5 +1,6 @@
-body{
+*{
     padding: 0%
+    
 }
 header{
     left: 0px;
@@ -17,34 +18,60 @@ main{
     left: 0px;
     top: 114px;
 }
-main .datos{
+ .datos{
    /* width: 30%;
     border: solid 1px black;*/
-    background-color: aqua;
     text-align: center;
 }
-main .visualizar{
-    /*width: 45%;
-    left: -20px;*/
-    border: solid 1px black;
+/*El align-items funciona por el flex-direction*/
+.visualizar {
+    flex-direction: column;
     text-align: center;
     align-items: center;
+    display: flex ;
+    justify-content: space-between;
+
 }
-main .card{
-    background-image: url('prueba.jpg');
-    width: 300px;
+.card{
+    width: 240px;
     height: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-size: cover;
+    background-image: url('img/azules.jpg');
+    border-radius: 15px;
 }
-main .mensaje{
+.card .logotipo{
+   text-align: right;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+}
+#chip{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    text-align: left;
+}
+#mostrarNumero{
+    color: thistle;
+}
+.mensaje{
+    margin: 15px;
     width: 150px;
     height: 70px;
     background: #54494B;
     border-radius: 20px;
+    text-align: center;
 }
 footer{
     width: 1440px;
-    height: 100px;
+    height: 70px;
     left: 0px;
-    top: 800px;
+    top: 700px;
     background: #F1F7ED;
 }
