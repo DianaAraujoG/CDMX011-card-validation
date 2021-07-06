@@ -1,18 +1,20 @@
 import {cardNumber, longitud} from './index.js';
 
 const validator = {
-  // ...
+
+  
 };
 /*Para esto debes implementar el objeto validator, el cual ya se encuentra exportado en el boilerplate. 
 Este objeto (validator) contiene dos métodos (isValid y maskify):*/
 /**CREO QUE LO HICE MAL :( */
 
-export default validator;
+
 
 function mostrar(){
   console.log('Estoy en el otro js' );
   console.log('Numero: '+cardNumber + ' Longitud: '+longitud);
 }
+
 function isValid(){
   /**Declaro un arreglo para invertir los numeros de la tarjeta */
   var array = [longitud];
@@ -66,7 +68,6 @@ function isValid(){
   }
   console.log(suma);
 }
-/*console.log('ingreso ' + numero);*/
 
 //No funciona con 20
 function maskify (cardNumber){ 
@@ -83,8 +84,8 @@ function maskify (cardNumber){
     }
     let menosCuatro = longitud - 3 ;
     for(let i=0; i< menosCuatro ; i++){
-       array2[i]='#';
-       ///console.log(array2[i]);
+      array2[i]='#';
+      ///console.log(array2[i]);
     }
     for(let i=0; i<=longitud; i++){
       codificado += array2[i];
@@ -94,4 +95,5 @@ function maskify (cardNumber){
   return(codificado);
 }
 
-export {mostrar, isValid,  maskify};
+export default validator;
+export {mostrar, isValid, maskify};
