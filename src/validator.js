@@ -42,29 +42,11 @@ function isValid(){
   }
   console.log(prueba2);
   /**Suma de los numeros mayores a 9*/ 
-  var Temporal1 = '';
-  var Temporal2 = '';
-  var mayorNueve= '';
   for(let i=0 ; i<longitud; i++){
-    
     if((i+1)%2 === 0){
       if(array[i] > 9){
-        console.log('mayor a 9'); /** REGRESAAA -------------------------------------------------------------- */
-        mayorNueve = array[i];
-        console.log(mayorNueve);
         array[i]= parseInt(array[i]) - 9;
         console.log(array[i]);
-       /* arrayTemporal = mayorNueve.split("(?<=.)");
-        console.log(mayorNueve);
-        for(let x=0; x < 2 ; x++){
-          console.log('entreee for9');
-          arrayTemporal[x] = mayorNueve.slice(x-1,x);
-          console.log(arrayTemporal[x]);
-        }
-        Temporal1= mayorNueve.slice(0,1);
-        console.log('Slice1 '+ 1+ ' Numero' + Temporal1);
-        Temporal2= mayorNueve.slice(1,2);
-        console.log('Slice1 '+ 1+ ' Numero' + Temporal2);*/
       }
     }else{
       continue;

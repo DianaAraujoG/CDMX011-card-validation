@@ -1,11 +1,25 @@
 *{
     padding: 0%
-    
 }
 header{
     left: 0px;
     top: 0px;
     background: #80CED7;
+}
+hr{
+    color: white;
+}
+#titulo{
+    font-family: 'Sansita Swashed', cursiva;
+    font-size: 25px;
+    margin: none;
+    padding: none;
+}
+#checkB{
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 20px;
+    padding: none;
 }
 main{
     padding: 0px 40px; /*el 3px lo voy a tener que modificar*/
@@ -19,9 +33,13 @@ main{
     top: 114px;
 }
  .datos{
-   /* width: 30%;
-    border: solid 1px black;*/
     text-align: center;
+}
+#btnAccept{
+    background-color: #247BA0;
+    border-radius: 20px;
+    padding: 7px;
+    border-color: white;
 }
 /*El align-items funciona por el flex-direction*/
 .visualizar {
@@ -30,7 +48,6 @@ main{
     align-items: center;
     display: flex ;
     justify-content: space-between;
-
 }
 .card{
     width: 240px;
@@ -67,9 +84,9 @@ main{
     background: #54494B;
     border-radius: 20px;
     text-align: center;
+    font-family: 'Sansita Swashed', cursiva;
 }
 footer{
-    width: 1440px;
     height: 70px;
     left: 0px;
     top: 700px;
