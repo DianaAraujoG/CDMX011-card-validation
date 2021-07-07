@@ -12,21 +12,23 @@ btnAccept.addEventListener('click', (evt) => {
     evt.preventDefault();
     /**Recuperamos el objeto del numero de tarjeta */
     let creditCardNumber = document.getElementById('creditCardNumber').value ;
-    console.log('boton: ' + creditCardNumber);
-    /*mostrar(creditCardNumber.value);*/ /**Prueba de llamado de funcion */
-    let longitud = creditCardNumber.length;
-    console.log('Tamaño: '+ longitud);
     
-    /**Validacion para que no entre vacio falta ver para que no ingrese letras */
+    /*mostrar(creditCardNumber.value);*/ /**Prueba de llamado de funcion */
     if( creditCardNumber === '' || creditCardNumber.length === 0 ){
         alert('Ingrese el numero de tarjeta')
     }else{
         /**Aqui se va hacer el llamado de las funciones */
-        document.getElementById('mostrarValida').innerHTML = validator.isValid(creditCardNumber);
+        document.getElementById('mostrarNumero').innerHTML = validator.maskify(creditCardNumber);
         /*En la siguiente linia se muestra el codificado del numero de la tarjeta cambiando
         el contenido de un parrado con la ayuda de document by id */
-        let codificacion = validator.maskify(creditCardNumber);
-        document.getElementById('mostrarNumero').innerHTML = codificacion ;
+        let codificacion = validator.isValid(creditCardNumber);
+        if(codificacion){
+            //document.getElementsById("mensaje").style.background= "orange";
+            document.getElementById('mostrarValida').innerHTML = 'Tarjeta valida FELICIDADES';
+        }else{
+            document.getElementById('mostrarValida').innerHTML = 'NO es valida, LO SIENTO';
+        }
+        
     }
 
 });

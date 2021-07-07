@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0%
 }
 header{
     left: 0px;
     top: 0px;
-    background: #80CED7;
+    background: #78E3FD;
 }
 hr{
     color: white;
@@ -17,9 +19,9 @@ hr{
     padding: none;
 }
 #checkB{
-    width: 25px;
-    height: 25px;
-    margin: 0px 0px 0px 20px;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 25px;
     padding: none;
 }
 main{
@@ -33,14 +35,41 @@ main{
     top: 114px;
 }
  .datos{
+    margin: 30px;
     text-align: center;
+    font-size: 25px;
+}
+#leyenda{
+    font-family: 'Roboto', sans-serif;
+}
+#ingresar{
+    font-family: 'Sansita', sans-serif;
+}
+#creditCardNumber{
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    width: 244px;
+    height: 40px;
     font-size: 20px;
 }
 #btnAccept{
     background-color: #247BA0;
+    width: 110px;
     border-radius: 20px;
-    padding: 7px;
-    border-color: white;
+    padding: 10px;
+    border-style: none;
+}
+#btnAccept :hover{
+    background-color: #0a394d;
+    width: 110px;
+    border-radius: 20px;
+    padding: 12px;
+    border-style: none;
+}
+#aceptar{
+    font-family: 'Sansita', sans-serif;
+    color: #fff;
+    font-size: 18px;
 }
 /*El align-items funciona por el flex-direction*/
 .visualizar {
@@ -51,43 +80,51 @@ main{
     justify-content: space-between;
 }
 .card{
-    width: 240px;
-    height: 140px;
+    width: 440px;
+    height: 240px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 30px;
     background-size: cover;
-    background-image: url('img/azules.jpg');
+    background-image: url('img/BackGround.jpg');
     border-radius: 15px;
 }
 .card .logotipo{
    text-align: right;
 }
 #logo{
-    width: 50px;
-    height: 50px;
+    width:  70px;
+    height: 70px;
     margin: 0px 20px;
 }
 #chip{
-    width: 40px;
-    height: 40px;
+    width: 350px;
+    height: 80px;
     margin: 0px 20px;
     text-align: left;
 }
 #mostrarNumero{
-    color: thistle;
+    color: #fff;
+    font-size: 30px;
+    margin: 0px;
 }
 .mensaje{
     margin: 15px;
-    width: 150px;
-    height: 70px;
+    width: 200px;
+    height: 90px;
     background: #54494B;
     border-radius: 20px;
-    text-align: center;
+}
+#mostrarValida{
     font-family: 'Sansita Swashed', cursiva;
+    text-align: center;
+    font-size: 25px;
+    color: #fff
 }
 footer{
+    text-align: center;
+    text-decoration-color: aqua;
     height: 100px;
     left: 0px;
     top: 700px;

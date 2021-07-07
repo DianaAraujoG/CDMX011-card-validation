@@ -13,35 +13,35 @@
     </header>
     <main>
       <div class="datos">
-        <pre>  Te acaba de llegar una tarjeta de tu banco y no
+        <p class="leyenda">  Te <b>acaba de llegar una tarjeta de tu banco</b> y no
       sabes si es valida o no, ingresa el numero 
-        de tu tarjeta y asegurate de que lo sea .</pre>
+        de tu tarjeta y asegurate de que lo sea .</p>
         <p id="ingresar">Ingrese su numero de tarjeta</p>
         <form >
           <p>
             <input type="text" id="creditCardNumber">
           </p>
-          <button id="btnAccept">Aceptar</button>
+          <button id="btnAccept"><span id="aceptar">ACEPTAR</span></button>
           <br/>
         </form>
       </div>
       <div class="visualizar">
         <div class="card">
           <div class="logotipo">
-            <img src="img/circulos.png" alt="logo" id="logo">
+            <img src="img/circulos2.png" alt="logo" id="logo">
           </div>
           
-          <img src="img/chip.png" alt="chip" id="chip">
+          <img src="img/sim-card .png" alt="chip" id="chip">
           <p id="mostrarNumero">numero de tarjeta justo aqui :)</p><!--Probicional para mostrar la dimension-->
         </div>
         <div class="mensaje">
-          <p id="mostrarValida">Tarjeta valida </p><!--probicional-->
+          <p id="mostrarValida">¿Es valida?</p><!--probicional-->
         </div>
       </div>
     </main>
     <footer>
       <hr>
-      <p>Esta pagina no guarda ningun dato.</p>
+      <p class="leyenda"> <i>Esta pagina no guarda ningun dato.</i></p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
