@@ -8,7 +8,7 @@ const validator = {
       codificado = creditCardNumber;
     }else{
       //
-      var array2 =[longitud];
+      let array2 =[longitud];
       for(let j=0; j<=longitud; j++){
         array2[j]=creditCardNumber.slice(j-1,j);
       }
@@ -71,7 +71,9 @@ const validator = {
         return('MasterCard');
     }else if((first == 4) && (longitud == 13 || longitud == 16)){
        return('VISA');
-    }
+    } /**else{
+      return('');
+    }**/
   }
 };
 

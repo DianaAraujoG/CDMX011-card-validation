@@ -40,7 +40,9 @@ btnAccept.addEventListener('click', (evt) => {
             document.getElementById('logo').src = "img/masterCard.png";
         }else if(franquicia == 'VISA'){
             document.getElementById('logo').src = "img/visa-logo-.png";
-        }
+        }/**else{
+            document.getElementById('logo').src = "img/tache.pngnpm";
+        }**/
     }
 
 });
