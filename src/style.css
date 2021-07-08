@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
-    padding: 0%
+body{
+    padding: 10PX;
+    background-size: cover;
+    background-image: url('img/fondo.jpg');
 }
 header{
     left: 0px;
     top: 0px;
-    background: #78E3FD;
+    background: rgba(128, 206, 215, 0.9);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px 70px 0px 70px ;
 }
-hr{
-    color: white;
-}
+
 #titulo{
     font-family: 'Sansita', sans-serif;
     font-size: 30px;
@@ -25,14 +28,17 @@ hr{
     padding: none;
 }
 main{
-    padding: 0px 40px; /*el 3px lo voy a tener que modificar*/
+    padding: 0px 30px; /*el 3px lo voy a tener que modificar*/
+    margin: 0px 70px;
     display: grid;
     /*Es para tener 2 columnas*/
     grid-template-columns: 50% 50%;
-    gap: 1em;
+    /*gap: 1em;     Este es para separar las columnas*/
     height: 420px;
-    left: 0px;
     top: 114px;
+    background: rgba(196, 196, 196, 0.9);
+    border-radius: 20px;
+    
 }
  .datos{
     margin: 30px;
@@ -46,7 +52,8 @@ main{
     font-family: 'Sansita', sans-serif;
 }
 #creditCardNumber{
-    background-color: #C4C4C4;
+    background-color: white;
+    color: #000;
     border-radius: 5px;
     width: 244px;
     height: 40px;
@@ -77,7 +84,6 @@ main{
     text-align: center;
     align-items: center;
     display: flex ;
-    justify-content: space-between;
 }
 .card{
     width: 440px;
@@ -110,7 +116,7 @@ main{
     margin: 0px;
 }
 .mensaje{
-    margin: 15px;
+    margin: 0px;
     width: 200px;
     height: 90px;
     background: #54494B;
@@ -124,9 +130,8 @@ main{
 }
 footer{
     text-align: center;
-    text-decoration-color: aqua;
+    color: white;
     height: 100px;
     left: 0px;
     top: 700px;
-    background: #F1F7ED;
 }

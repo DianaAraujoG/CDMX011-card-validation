@@ -7,9 +7,7 @@
   </head>
   <body>
     <header>
-      <hr>
       <h3> <span><img src="img/check.png" alt="check" id="checkB"></span> <span id="titulo">Validación de tarjeta de credito</span> </h3>
-      <hr>
     </header>
     <main>
       <div class="datos">
@@ -17,9 +15,9 @@
       sabes si es valida o no, ingresa el numero 
         de tu tarjeta y asegurate de que lo sea .</p>
         <p id="ingresar">Ingrese su numero de tarjeta</p>
-        <form >
+        <form id="formulario">
           <p>
-            <input type="text" id="creditCardNumber">
+            <input type="text" id="creditCardNumber" value="">
           </p>
           <button id="btnAccept"><span id="aceptar">ACEPTAR</span></button>
           <br/>
@@ -32,7 +30,7 @@
           </div>
           
           <img src="img/sim-card .png" alt="chip" id="chip">
-          <p id="mostrarNumero">numero de tarjeta justo aqui :)</p><!--Probicional para mostrar la dimension-->
+          <p id="mostrarNumero"> -- -- -- -- -- -- -- -- -- -- -- -- --  </p><!--Probicional para mostrar la dimension-->
         </div>
         <div class="mensaje">
           <p id="mostrarValida">¿Es valida?</p><!--probicional-->
@@ -40,7 +38,6 @@
       </div>
     </main>
     <footer>
-      <hr>
       <p class="leyenda"> <i>Esta pagina no guarda ningun dato.</i></p>
     </footer>
     <script src="index.js" type="module"></script>

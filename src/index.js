@@ -12,12 +12,14 @@ btnAccept.addEventListener('click', (evt) => {
     evt.preventDefault();
     /**Recuperamos el objeto del numero de tarjeta */
     let creditCardNumber = document.getElementById('creditCardNumber').value ;
-    
+   /**Es para limpiar el formulario */
+    document.getElementById("formulario").reset();
     /*mostrar(creditCardNumber.value);*/ /**Prueba de llamado de funcion */
     if( creditCardNumber === '' || creditCardNumber.length === 0 ){
         alert('Ingrese el numero de tarjeta')
     }else{
         /**Aqui se va hacer el llamado de las funciones */
+        
         document.getElementById('mostrarNumero').innerHTML = validator.maskify(creditCardNumber);
         /*En la siguiente linia se muestra el codificado del numero de la tarjeta cambiando
         el contenido de un parrado con la ayuda de document by id */
