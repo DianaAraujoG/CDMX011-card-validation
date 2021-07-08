@@ -62,6 +62,7 @@ const validator = {
   },
   "getIssuer": function(creditCardNumber){
     const longitud = creditCardNumber.length;
+    
   }
 };
 
