@@ -18,12 +18,12 @@ btnAccept.addEventListener('click', (evt) => {
     if( creditCardNumber === '' || creditCardNumber.length === 0 ){
         alert('Ingrese el numero de tarjeta')
     }else{
-        /**Aqui se va hacer el llamado de las funciones */
-        
         document.getElementById('mostrarNumero').innerHTML = validator.maskify(creditCardNumber);
+
         /*En la siguiente linia se muestra el codificado del numero de la tarjeta cambiando
         el contenido de un parrado con la ayuda de document by id */
-        let codificacion = validator.isValid(creditCardNumber);
+
+        const codificacion = validator.isValid(creditCardNumber);
         if(codificacion){
             document.getElementById('mensaje').style.backgroundColor ="rgba(255, 173, 5, 0.8)";
             document.getElementById('mostrarValida').innerHTML = 'Tarjeta valida';
@@ -33,6 +33,14 @@ btnAccept.addEventListener('click', (evt) => {
             document.getElementById('mostrarValida').innerHTML = 'NO es valida';
         }
         
+        const franquicia = validator.getIssuer(creditCardNumber);
+        if(franquicia == 'AmericanExpress'){
+            document.getElementById('logo').src = "img/American-Express-Logo.png";
+        } else if(franquicia == 'MasterCard'){
+            document.getElementById('logo').src = "img/masterCard.png";
+        }else if(franquicia == 'VISA'){
+            document.getElementById('logo').src = "img/visa-logo-.png";
+        }
     }
 
 });

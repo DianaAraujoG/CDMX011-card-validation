@@ -62,7 +62,16 @@ const validator = {
   },
   "getIssuer": function(creditCardNumber){
     const longitud = creditCardNumber.length;
-    const firtNumbers = parseInt(creditCardNumber.slice(0,2));
+    const firstNumbers = parseInt(creditCardNumber.slice(0,2));
+    const first = parseInt(creditCardNumber.slice(0,1));
+
+    if((firstNumbers == 34 || firstNumbers == 37) && (longitud == 15)){
+        return('AmericanExpress');
+    }else if((firstNumbers < 56 && firstNumbers > 50) && (longitud == 13 || longitud == 16)){
+        return('MasterCard');
+    }else if((first == 4) && (longitud == 13 || longitud == 16)){
+       return('VISA');
+    }
   }
 };
 
