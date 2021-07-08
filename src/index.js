@@ -25,10 +25,12 @@ btnAccept.addEventListener('click', (evt) => {
         el contenido de un parrado con la ayuda de document by id */
         let codificacion = validator.isValid(creditCardNumber);
         if(codificacion){
-            //document.getElementsById("mensaje").style.background= "orange";
-            document.getElementById('mostrarValida').innerHTML = 'Tarjeta valida FELICIDADES';
+            document.getElementById('mensaje').style.backgroundColor ="rgba(255, 173, 5, 0.8)";
+            document.getElementById('mostrarValida').innerHTML = 'Tarjeta valida';
+            document.getElementById('mostrarValida').style.color ="black";
         }else{
-            document.getElementById('mostrarValida').innerHTML = 'NO es valida, LO SIENTO';
+            document.getElementById('mensaje').style.backgroundColor ="rgba(179, 57, 81, 0.8)";
+            document.getElementById('mostrarValida').innerHTML = 'NO es valida';
         }
         
     }

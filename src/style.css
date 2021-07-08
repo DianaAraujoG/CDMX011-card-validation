@@ -86,8 +86,8 @@ main{
     display: flex ;
 }
 .card{
-    width: 440px;
-    height: 240px;
+    width: 420px;
+    height: 220px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -115,11 +115,11 @@ main{
     font-size: 30px;
     margin: 0px;
 }
-.mensaje{
-    margin: 0px;
+#mensaje{
+    margin: -10px 0px 0px 0px;
     width: 200px;
     height: 90px;
-    background: #54494B;
+    background: rgba(84, 73, 75, 0.8);;
     border-radius: 20px;
 }
 #mostrarValida{
@@ -131,7 +131,7 @@ main{
 footer{
     text-align: center;
     color: white;
-    height: 100px;
+    height: 40px;
     left: 0px;
     top: 700px;
 }

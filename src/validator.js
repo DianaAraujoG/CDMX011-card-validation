@@ -60,6 +60,9 @@ const validator = {
       return(false); /**'NO es valida, LO SIENTO' */
     }
   },
+  "getIssuer": function(creditCardNumber){
+    
+  }
 };
 
 export default validator;
