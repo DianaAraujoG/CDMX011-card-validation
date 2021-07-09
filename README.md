@@ -8,7 +8,7 @@ a su casa y quiere tener la certeza de que es válida.
 ![ImagenFinal](https://dochub.com/dianac251/dbnaAMqK9dWB4MkRGNXJm0/captura-de-pantalla-1359-png)
 ![NOValido](https://dochub.com/dianac251/ALzmZB7wMbDoNQXRX8J560/captura-de-pantalla-1360-png)
 ![Valido](https://dochub.com/import-document?auth_uid=110692173898964765847&jid=c896c0cd432ee236bfba70cce79602a7)
-![pRUEBA](img/check.png)
+
 ***
 
 ## Usuarios y objetivo
