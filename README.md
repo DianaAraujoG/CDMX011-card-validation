@@ -5,7 +5,7 @@ a su casa y quiere tener la certeza de que es válida.
 ***
 
 ## Imagen final del proyecto
-(img/circulos2.png)
+(https://photos.google.com/photo/AF1QipO2-Xaww6sUL1WUz2jTpX8rWLviohIZetQ47ilN)
 ***
 
 ## 1. Preámbulo
