@@ -5,7 +5,9 @@ a su casa y quiere tener la certeza de que es válida.
 ***
 
 ## Imagen final del proyecto
-(https://dochub.com/dianac251/dbnaAMqK9dWB4MkRGNXJm0/captura-de-pantalla-1359-png)
+![imagenfinal](https://dochub.com/dianac251/dbnaAMqK9dWB4MkRGNXJm0/captura-de-pantalla-1359-png)
+![NOValido](https://dochub.com/dianac251/ALzmZB7wMbDoNQXRX8J560/captura-de-pantalla-1360-png)
+![Valido](https://drive.google.com/drive/my-drive)
 ***
 
 ## Usuarios y objetivo
@@ -16,18 +18,26 @@ Soluciona el problema de una forma sencilla y amigable, mostrando con un mensaje
 tarjeta que te enmascara el número de cuenta mostrando en la parte superior derecha el logotipo del tipo de 
 tarjeta que es, American Express, Visa o Mastercard, ya que son las más utilizadas en México.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+
 
 ## Prototipo poco fiable (Lapiz y papel)
 
+![PrototipoPapel](https://drive.google.com/drive/my-drive)
 
 En el feedback me dijeron que les pareció un diseño muy entendible y aceptable para el usuario.
 
-## Paleta de colores 
 
-
-
-### Prototipo en figma
+### Paleta de colores y Prototipo en figma
 
 (https://www.figma.com/file/HZ9J14FyE0D4lh52wn4UsU/CardValidacion?node-id=0%3A1)
+
+## Tablero de trello
+
+Las cosas que realice en el primer sprint estan archivadas
+
+(https://trello.com/b/DgrEUchh/cardvalidacion)
+
+## Documento de GoogleDocument
+
+(https://docs.google.com/document/d/1QTZWVQlvqCYIHh3Q4ajRdBWKOiVgsoptcPgZ47Cmlq4/edit?usp=sharing)
 
