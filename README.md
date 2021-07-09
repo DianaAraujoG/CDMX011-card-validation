@@ -5,10 +5,10 @@ a su casa y quiere tener la certeza de que es válida.
 ***
 
 ## Imagen final del proyecto
-![imagenfinal](https://dochub.com/dianac251/dbnaAMqK9dWB4MkRGNXJm0/captura-de-pantalla-1359-png)
+![ImagenFinal](https://dochub.com/dianac251/dbnaAMqK9dWB4MkRGNXJm0/captura-de-pantalla-1359-png)
 ![NOValido](https://dochub.com/dianac251/ALzmZB7wMbDoNQXRX8J560/captura-de-pantalla-1360-png)
-![Valido](https://drive.google.com/drive/my-drive)
-![Prueba](https://photos.google.com/photo/AF1QipO2-Xaww6sUL1WUz2jTpX8rWLviohIZetQ47ilN)
+![Valido](https://dochub.com/import-document?auth_uid=110692173898964765847&jid=c896c0cd432ee236bfba70cce79602a7)
+![pRUEBA](img/check.png)
 ***
 
 ## Usuarios y objetivo
@@ -23,7 +23,7 @@ tarjeta que es, American Express, Visa o Mastercard, ya que son las más utiliza
 
 ## Prototipo poco fiable (Lapiz y papel)
 
-![PrototipoPapel](https://drive.google.com/drive/my-drive)
+![PrototipoPapel](https://dochub.com/dianac251/7vA0q9lw2mzv7kGVPDNOxd/20210630-133941-jpg)
 
 En el feedback me dijeron que les pareció un diseño muy entendible y aceptable para el usuario.
 
