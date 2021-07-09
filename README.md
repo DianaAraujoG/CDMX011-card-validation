@@ -1,7 +1,11 @@
-# Tarjeta de crédito válida
+# Validación de tarjeta de crédito Online
 
-## Índice
+Mi proyecto se quiere enfocar a la gente que le acaba de llegar una tarjeta 
+a su casa y quiere tener la certeza de que es válida.
+***
 
+## Imagen final del proyecto
+(img/circulos2.png)
 ***
 
 ## 1. Preámbulo
