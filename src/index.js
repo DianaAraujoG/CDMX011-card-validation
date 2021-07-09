@@ -32,10 +32,11 @@ btnAccept.addEventListener('click', (evt) => {
             document.getElementById('mensaje').style.backgroundColor ="rgba(179, 57, 81, 0.8)";
             document.getElementById('mostrarValida').innerHTML = 'NO es valida';
         }
-        
+        /**HACKER EDITION */
         const franquicia = validator.getIssuer(creditCardNumber);
         if(franquicia == 'AmericanExpress'){
             document.getElementById('logo').src = "img/American-Express-Logo.png";
+            document.getElementById('logo').style.width = "130px";
         } else if(franquicia == 'MasterCard'){
             document.getElementById('logo').src = "img/masterCard.png";
         }else if(franquicia == 'VISA'){
