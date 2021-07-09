@@ -20,7 +20,7 @@ const validator = {
         codificado += array2[i];
       }
     }
-    return(codificado);
+    return codificado;
   },
   "isValid":function(creditCardNumber){
     /**Declaro un arreglo para invertir los numeros de la tarjeta */
